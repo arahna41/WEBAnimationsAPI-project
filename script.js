@@ -54,12 +54,15 @@ images[1].addEventListener("mouseenter", () => {
 btnMacbook.addEventListener("dblclick", () => {
   images[1].animate(
     [
-      { transform: "rotate(0deg)" },
-      { transform: "rotate(180deg)" },
-      { transform: "rotate(360deg)" },
+      { transform: "translateY(0) translateX(0)" },
+      { transform: "translateY(0) translateX(50px)" },
+      { transform: "translateY(50px) translateX(50px)" },
+      { transform: "translateY(50px) translateX(0)" },
+      { transform: "translateY(0) translateX(0)" },
     ],
     {
-      duration: 2000,
+      duration: 3000,
+      iterations: Infinity,
     }
   );
 });
